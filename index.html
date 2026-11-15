@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#180f26" />
+    <title>Make a Wish</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="cake-scene">
+      <div class="stars" aria-hidden="true"></div>
+      <section class="welcome-page" id="welcomePage" aria-label="Birthday greeting">
+        <p>Happy birthday!!! We miss u</p>
+        <button class="primary-button" id="welcomeNextButton" type="button">Next</button>
+      </section>
+
+      <section class="intro-page" id="introPage" aria-label="Ritika through the years" hidden>
+        <p class="intro-title">the AP is looking smooth....</p>
+        <div class="intro-frames">
+          <figure class="intro-frame active">
+            <img src="./assets/age-1.jpeg?v=1" alt="Ritika at age 3" />
+            <figcaption>3</figcaption>
+          </figure>
+          <figure class="intro-frame">
+            <img src="./assets/age-13.jpeg?v=1" alt="Ritika at age 14" />
+            <figcaption>14</figcaption>
+          </figure>
+          <figure class="intro-frame">
+            <img src="./assets/age-25.jpeg?v=1" alt="Ritika at age 25" />
+            <figcaption>25</figcaption>
+          </figure>
+          <figure class="intro-frame">
+            <img src="./assets/age-38.jpeg?v=1" alt="Ritika at age 36" />
+            <figcaption>36</figcaption>
+          </figure>
+          <figure class="intro-frame">
+            <img src="./assets/age-51.jpeg?v=1" alt="Ritika at age 47" />
+            <figcaption>47</figcaption>
+          </figure>
+        </div>
+        <button class="secondary-button intro-next" id="introNextButton" type="button">
+          Next
+        </button>
+      </section>
+
+      <div class="unbox-stage" id="unboxStage" hidden>
+        <div class="gift-box" aria-hidden="true">
+          <div class="gift-glow"></div>
+          <div class="gift-lid">
+            <div class="bow bow-left"></div>
+            <div class="bow bow-right"></div>
+            <div class="lid-ribbon"></div>
+          </div>
+          <div class="gift-body">
+            <div class="gift-ribbon"></div>
+          </div>
+        </div>
+        <button class="primary-button open-button" id="openButton" type="button">
+          open
+        </button>
+      </div>
+
+      <section class="cake-card wrapped" id="cakeCard" aria-label="Birthday cake">
+        <p class="instruction" id="instruction">
+          turn on ur mic, make a wish, and blow at the candles
+        </p>
+        <span id="candleCount" class="sr-only" aria-live="polite">26</span>
+        <div class="cake-wrap">
+          <div class="cake" id="cake" aria-label="Birthday cake with 26 lit candles">
+            <div class="plate"></div>
+            <div class="cake-side"></div>
+            <div class="icing"></div>
+            <div class="cake-photo">
+              <img
+                src="./assets/her-photo.jpeg?v=original-photo-2"
+                alt="Birthday portrait"
+              />
+            </div>
+            <div class="drip drip-one"></div>
+            <div class="drip drip-two"></div>
+            <div class="drip drip-three"></div>
+            <div class="candle-field" id="candleField" aria-hidden="true"></div>
+          </div>
+        </div>
+        <div class="controls">
+          <button class="primary-button" id="micButton" type="button">
+            <span class="button-icon" aria-hidden="true">🎤</span>
+            Enable microphone
+          </button>
+          <button class="secondary-button" id="resetButton" type="button">
+            Relight candles
+          </button>
+        </div>
+        <div class="mic-panel" id="micPanel" hidden>
+          <div class="mic-status">
+            <span class="status-dot" id="statusDot"></span>
+            <span id="micStatus">Listening… blow toward your microphone</span>
+          </div>
+          <div class="meter" aria-label="Microphone strength">
+            <div class="meter-fill" id="meterFill"></div>
+            <div class="meter-threshold" aria-hidden="true"></div>
+          </div>
+          <p class="attempt-message" id="attemptMessage" aria-live="polite"></p>
+        </div>
+      </section>
+
+      <section class="outro-page" id="outroPage" aria-label="Birthday message" hidden>
+        <p class="outro-message">
+          happy birthday! may ur new big girl HSA cover a nice ergonomic chair
+        </p>
+        <figure class="outro-photo">
+          <img
+            src="./assets/outro-photo.jpeg?v=original-photo-1"
+            alt="Ritika working comfortably from bed"
+          />
+        </figure>
+      </section>
+
+      <aside class="spotify-dock" aria-label="Background music">
+        <button
+          class="spotify-toggle"
+          id="spotifyToggle"
+          type="button"
+          aria-expanded="false"
+          aria-label="Open Spotify player"
+        >
+          ♪
+        </button>
+        <iframe
+          title="After Party by Don Toliver on Spotify"
+          src="https://open.spotify.com/embed/track/527k23H0A4Q0UJN3vGs0Da?utm_source=generator&theme=0"
+          width="100%"
+          height="80"
+          frameborder="0"
+          allowfullscreen=""
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="eager"
+        ></iframe>
+      </aside>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
